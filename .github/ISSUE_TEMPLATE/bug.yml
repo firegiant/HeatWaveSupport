@@ -1,0 +1,50 @@
+name: Bug Report
+description: Found a problem while using HeatWave?
+labels: [ "triage" ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## FireGiant Enterprise Support Customer?
+        
+        If you are a [FireGiant Enterprise Support Customer](https://www.firegiant.com/services/support-programs/) you can [submit bugs privately](https://support.firegiant.com/requests/new)
+        
+        ---
+  - type: input
+    id: hwversion
+    attributes:
+      label: HeatWave Version
+      description: To find the HeatWave Version, open Visual Studio, click the "Help" menu, choose "About Visual Studio" and find "HeatWave" in the Installed Products list.
+      placeholder: '0.9.#.#'
+    validations:
+      required: true
+  - type: input
+    id: vsversion
+    attributes:
+      label: Visual Studio Version
+      description: To find the Visual Studio Version, open Visual Studio, click the "Help" menu, choose "About Visual Studio" and look for "Current Version".
+      placeholder: '16.#.# or 17.#.#'
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Repro Steps
+      description: Please provide the steps necessary to reproduce the issue
+      value: |
+        1. 
+        2. 
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Result
+      description: What did you see that was unexpected?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Result
+      description: What did you expect to see?
