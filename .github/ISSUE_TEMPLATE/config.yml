@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: HeatWave Documentation
+    url: https://www.firegiant.com/wix/heatwave/
+    about: Documentation about HeatWave
+  - name: FireGiant Support Services
+    url: https://www.firegiant.com/services/
+    about: Support services provided by FireGiant

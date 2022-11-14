@@ -1,0 +1,26 @@
+name: Feature Idea
+description: Have a HeatWave idea we should know about?
+labels: [ "triage" ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## FireGiant Enterprise Support Customer?
+        
+        If you are a [FireGiant Enterprise Support Customer](https://www.firegiant.com/services/support-programs/) you can [submit comments privately](https://support.firegiant.com/requests/new)
+        
+        ---
+  - type: input
+    id: hwversion
+    attributes:
+      label: HeatWave Version
+      description: To find the HeatWave Version, open Visual Studio, click the "Help" menu, choose "About Visual Studio" and find "HeatWave" in the Installed Products list.
+      placeholder: '0.9.#.#'
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: "What's your idea?"
+    validations:
+      required: true
